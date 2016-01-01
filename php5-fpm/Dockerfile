@@ -37,3 +37,6 @@ ADD files/etc/php5/fpm/pool.d/php5-app.pool.conf /etc/php5/fpm/pool.d/
 
 # Define the user identifier to 1000 for "www-data".
 RUN usermod -u 1000 www-data
+
+# Configure executable to start php5-fpm.
+ENTRYPOINT ["php5-fpm"]
