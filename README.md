@@ -10,31 +10,12 @@
 
 ### Development
 
-        $ docker-compose build
+        $ docker build -t="php/php5-fpm" -f ./Dockerfile .
 
-Builds the `php` service in `docker-compose.yml`.
-
-It creates an image with the name `dockerdebianphp5fpm_php` and the tag `latest`.
-
-    $ docker images
-    # dockerdebianphp5fpm_php latest f1643e5cdd6f 2 minutes ago 133.9 MB
+Creates an image with the tag `php/fpm-7`.
 
 ### Usage
 
-    $ docker-compose up -d
+    $ docker run -d --name=php5_fpm --p 9090:8080 php/php5-fpm
 
-Creates and starts a container with the name `dockerdebianphp5fpm_php_1`.
-
-    $ docker ps -a
-    # ... dockerdebianphp5fpm_php "php5-fpm -F" ... dockerdebianphp5fpm_php_1
-
-Logs are accessible in `./volumes/var/log/php5-fpm.log`.
-
-    [01-Jan-2016 21:50:40] NOTICE: fpm is running, pid 1
-    [01-Jan-2016 21:50:40] NOTICE: ready to handle connections
-    [01-Jan-2016 21:50:40] NOTICE: systemd monitor interval set to 10000ms
-
-### Host Mapping
-
-Volumes are mapped to host `./volumes/`.
-- `/var/log`
+Creates and starts a container with the name `php5_fpm` .
