@@ -1,0 +1,6 @@
+php:
+    build: php5-fpm
+    expose:
+        - 9090:9000
+    volumes:
+        - ./volumes/var/log/:/var/log
