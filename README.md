@@ -28,7 +28,11 @@ Creates and starts a container with the name `dockerdebianphp5fpm_php_1`.
     $ docker ps -a
     # ... dockerdebianphp5fpm_php "php5-fpm -F" ... dockerdebianphp5fpm_php_1
 
-After a few seconds, open `http://<machine_ip>:8080`.
+Logs are accessible in `./volumes/var/log/php5-fpm.log`.
+
+    [01-Jan-2016 21:50:40] NOTICE: fpm is running, pid 1
+    [01-Jan-2016 21:50:40] NOTICE: ready to handle connections
+    [01-Jan-2016 21:50:40] NOTICE: systemd monitor interval set to 10000ms
 
 ### Host Mapping
 
