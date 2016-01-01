@@ -43,3 +43,6 @@ ENTRYPOINT ["php5-fpm"]
 
 # Define default command.
 CMD ["-F"]
+
+# Listen on port 9000.
+EXPOSE 9000
