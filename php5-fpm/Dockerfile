@@ -40,3 +40,6 @@ RUN usermod -u 1000 www-data
 
 # Configure executable to start php5-fpm.
 ENTRYPOINT ["php5-fpm"]
+
+# Define default command.
+CMD ["-F"]
