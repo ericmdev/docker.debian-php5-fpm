@@ -34,3 +34,6 @@ ADD files/etc/php5/fpm/conf.d/php5-app.ini /etc/php5/cli/conf.d/
 
 # Add pool configuration file.
 ADD files/etc/php5/fpm/pool.d/php5-app.pool.conf /etc/php5/fpm/pool.d/
+
+# Define the user identifier to 1000 for "www-data".
+RUN usermod -u 1000 www-data
