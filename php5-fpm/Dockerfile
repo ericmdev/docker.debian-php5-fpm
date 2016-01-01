@@ -7,3 +7,7 @@
 #
 FROM debian:jessie
 
+#
+# Set author.
+#
+MAINTAINER Eric Mugerwa <dev@ericmugerwa.com>
