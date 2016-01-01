@@ -1,6 +1,6 @@
 ## Docker: Debian - PHP5-FPM
 
-**Dockerfile** of [Debian](https://www.debian.org/) [PHP5-FPM](https://www.nginx.com/).
+**Dockerfile** of [Debian](https://www.debian.org/) [PHP5-FPM](http://php.net/).
 
 *Requirements*
 - [Docker](https://www.docker.com/) 
@@ -26,7 +26,7 @@ It creates an image with the name `dockerdebianphp5fpm_php` and the tag `latest`
 Creates and starts a container with the name `dockerdebianphp5fpm_php_1`.
 
     $ docker ps -a
-    # ... dockerdebianphp5fpm_php "php5-fpm" ... dockerdebianphp5fpm_php_1
+    # ... dockerdebianphp5fpm_php "php5-fpm -F" ... dockerdebianphp5fpm_php_1
 
 After a few seconds, open `http://<machine_ip>:8080`.
 
