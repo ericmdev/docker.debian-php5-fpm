@@ -11,7 +11,7 @@
 - [debian:jessie](https://hub.docker.com/_/debian/)
 
 *Process*
-- PHP-FPM (5.6.14)
+- php5-fpm (5.6.14)
 
 ### Development
 
