@@ -1,0 +1,11 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+script:
+  - docker build -t php/php5-fpm -f ./Dockerfile .
+  - docker run -d --name=php_php5_fpm -p 9090:9000 php/php5-fpm
+  - docker ps -a
