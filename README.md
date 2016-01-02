@@ -5,8 +5,11 @@
 *Requirements*
 - [Docker](https://www.docker.com/) 
 
-*Base Docker Image:*
+*Base Docker Image*
 - [debian:jessie](https://hub.docker.com/_/debian/)
+
+*Process*
+- PHP (5.6.14)
 
 ### Development
 
@@ -16,6 +19,10 @@ Creates an image with the tag `php/php5-fpm`.
 
 ### Usage
 
-    $ docker run -d --name=php_php5_fpm --p 9090:9000 php/php5-fpm
+    $ docker run -d --name=php_php5_fpm -p 9090:9000 php/php5-fpm
 
 Creates and starts a container with the name `php_php5_fpm` mapped to host port `9090`.
+
+Access the Bash shell:
+
+    $ docker exec -it php_php5_fpm bash
