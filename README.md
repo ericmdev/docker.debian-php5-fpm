@@ -10,7 +10,7 @@
 
 ### Development
 
-    $ docker build -t="php/php5-fpm" -f ./Dockerfile .
+    $ docker build -t php/php5-fpm -f ./Dockerfile .
 
 Creates an image with the tag `php/php5-fpm`.
 
