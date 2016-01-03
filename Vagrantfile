@@ -7,7 +7,7 @@ docker_config  = (JSON.parse(File.read("vagrant/config/docker.json")))['docker']
 
 Vagrant.configure("2") do |config|
 
-  config.vm.provision "shell", inline: "echo docker.debian-nginx development environment"
+  config.vm.provision "shell", inline: "echo docker.php5-fpm development environment"
 
   config.vm.provision :docker
 
@@ -36,10 +36,11 @@ Vagrant.configure("2") do |config|
       end
 
       config.vm.provision "docker" do |docker|
-        docker.build_image docker_config[':build_image']
-        docker.run docker_config[':run_name'],
-          args: docker_config[':args'],
-          image: docker_config[':image']
+        docker.build_image docker_config['build_image'][':path'],
+          args: docker_config['build_image'][':args']
+        docker.run docker_config['run'][':name'],
+          image: docker_config['run'][':image'],
+          args: docker_config['run'][':args']
       end
     end
   end
