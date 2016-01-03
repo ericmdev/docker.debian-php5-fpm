@@ -13,6 +13,9 @@
 *Process*
 - php5-fpm (5.6.14)
 
+*Docker Pull Command*
+- `docker pull ericmdev/php5-fpm`
+
 ### Development
 
     $ docker build -t php/php5-fpm -f ./Dockerfile .
