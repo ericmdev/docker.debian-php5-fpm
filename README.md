@@ -24,4 +24,4 @@ Creates the image `php5-fpm`.
 
 ### Usage
 
-    $ docker run -d --name=php5_fpm -p 9090:9000 php/php5-fpm
+    $ docker run -d --name=php5_fpm -p 9090:9000 php5-fpm
