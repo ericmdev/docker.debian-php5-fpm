@@ -13,11 +13,8 @@
 *Process*
 - php5-fpm (5.6.14)
 
-### Development
-
-    $ docker build -t php/php5-fpm -f ./Dockerfile .
-
-Creates an image with the tag `php/php5-fpm`.
+*Docker Pull Command*
+- `docker pull ericmdev/php5-fpm`
 
 ### Usage
 
@@ -28,3 +25,9 @@ Creates and starts a container with the name `php_php5_fpm` mapped to host port 
 Access the Bash shell:
 
     $ docker exec -it php_php5_fpm bash
+
+### Development
+
+    $ docker build -t php/php5-fpm -f ./Dockerfile .
+
+Creates an image with the tag `php/php5-fpm`.
