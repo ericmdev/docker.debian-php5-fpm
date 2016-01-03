@@ -1,0 +1,12 @@
+{
+  "docker": {
+    "build_image": {
+    	":path": "/vagrant",
+    	":args": "-t php5-fpm"
+    },
+    "run": {
+    	":name": "php5_fpm",
+    	":image": "php5-fpm"
+    }
+  }
+}
