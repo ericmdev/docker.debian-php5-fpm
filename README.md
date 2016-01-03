@@ -1,6 +1,6 @@
-## Docker: Debian - PHP5-FPM
+## Dockerfile: Debian - PHP5-FPM
 
-[![Build Status](https://travis-ci.org/ericmdev/docker.debian-php5-fpm.svg?branch=master)](https://travis-ci.org/ericmdev/docker.debian-php5-fpm)
+[![Build Status](https://travis-ci.org/ericmdev/dockerfile.php5-fpm.svg?branch=master)](https://travis-ci.org/ericmdev/dockerfile.php5-fpm)
 
 **Dockerfile** of [Debian](https://www.debian.org/) [PHP5-FPM](http://php.net/manual/en/book.fpm.php).
 
