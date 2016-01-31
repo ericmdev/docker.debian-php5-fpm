@@ -8,7 +8,7 @@
 - [Docker](https://www.docker.com/) 
 
 *Base Docker Image*
-- [ericmdev/essentials](https://hub.docker.com/r/ericmdev/essentials/)
+- [ericmdev/php5](https://hub.docker.com/r/ericmdev/php5/)
 
 *Docker Pull Command*
 - `docker pull ericmdev/php5-fpm`
