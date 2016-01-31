@@ -1,6 +1,6 @@
 ## Dockerfile: Debian - PHP5-FPM
 
-[![Build Status](https://travis-ci.org/ericmdev/dockerfile.php5-fpm.svg?branch=master)](https://travis-ci.org/ericmdev/dockerfile.php5-fpm)
+[![Build Status](https://travis-ci.org/ericmdev/php5-fpm.dockerfile.svg?branch=master)](https://travis-ci.org/ericmdev/php5-fpm.dockerfile)
 
 **Dockerfile** of [Debian](https://www.debian.org/) [PHP5-FPM](http://php.net/manual/en/book.fpm.php).
 
@@ -8,20 +8,23 @@
 - [Docker](https://www.docker.com/) 
 
 *Base Docker Image*
-- [debian:jessie](https://hub.docker.com/_/debian/)
-
-*Process*
-- php5-fpm (5.6.14)
+- [ericmdev/php5](https://hub.docker.com/r/ericmdev/php5/)
 
 *Docker Pull Command*
 - `docker pull ericmdev/php5-fpm`
 
-### Development
-
-    $ docker build -t php5-fpm -f ./Dockerfile .
-
-Creates the image `php5-fpm`.
-
 ### Usage
 
-    $ docker run -d --name=php5_fpm -p 9090:9000 php5-fpm
+Build the image.
+
+    $ make
+
+Run the container.
+
+    $ make run
+
+Dig into the container.
+
+    $ make exec
+
+*See the `Makefile` for more options.

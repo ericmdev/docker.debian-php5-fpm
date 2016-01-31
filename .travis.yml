@@ -6,6 +6,7 @@ services:
   - docker
 
 script:
-  - docker build -t php5-fpm -f ./Dockerfile .
-  - docker run -d --name=php5_fpm -p 9090:9000 php5-fpm
-  - docker ps -a
+  - make
+  - make ls-images
+  - make run
+  - make ls
