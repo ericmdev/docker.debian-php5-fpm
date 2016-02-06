@@ -10,9 +10,6 @@
 *Base Docker Image*
 - [ericmdev/php5](https://hub.docker.com/r/ericmdev/php5/)
 
-*Process*
-- php5-fpm
-
 *Docker Pull Command*
 - `docker pull ericmdev/php5-fpm`
 
